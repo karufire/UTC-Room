@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UTC Room - Lịch học</title>
+<link href="UTC-room.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="app">
+<!-- Thanh bên -->
+<aside class="sidebar">
+<div class="logo">
+<div class="logo-icon">UTC</div>
+<div>
+<h2>UTC Room</h2>
+<p>Quản lý phòng học</p>
+</div>
+</div>
+<div class="menu-title">MENU CHÍNH</div>
+<nav>
+<a class="menu-item" href="tongquan.html">
+<span>▦</span> Tổng quan
+                </a>
+<a class="menu-item" href="quanlyphong.html">
+<span>▤</span> Quản lý phòng
+                </a>
+<a class="menu-item active" href="lichhoc.html">
+<span>▦</span> Lịch học
+                </a>
+
+<a class="menu-item" href="thietbi.html">
+<span>⚙</span> Thiết bị
+                </a>
+<a class="menu-item" href="baocao.html">
+<span>▥</span> Báo cáo
+                </a>
+</nav>
+<div class="sidebar-bottom">
+<div class="user-avatar">AD</div>
+<div class="user-info">
+<strong>Quản trị viên</strong>
+<span>Administrator</span>
+</div>
+</div>
+</aside>
+<!-- Nội dung chính -->
+<main class="main-content">
+<header class="topbar">
+<div>
+<h1 id="page-title">Lịch học</h1>
+<p>Hệ thống quản lý phòng học UTC</p>
+</div>
+<div class="topbar-right">
+<span class="today" id="today"></span>
+<span id="auth-state">Chế độ xem</span><button class="btn btn-primary" id="auth-btn">Đăng nhập Admin</button>
+</div>
+</header>
+<!-- Trang tổng quan -->
+
+<!-- Quản lý phòng -->
+
+<!-- Lịch học -->
+<section class="page active" id="schedule">
+<div class="content-card">
+<div class="card-header">
+<div>
+<h3>Lịch học và lịch sử dụng phòng</h3>
+<p>Theo dõi lịch học của các phòng.</p>
+</div>
+<button class="btn btn-primary" id="add-schedule-btn">
+                            + Thêm lịch
+                        </button>
+</div>
+<div class="toolbar">
+<input id="schedule-date-filter" type="date"/>
+<input id="schedule-search" placeholder="Tìm môn học, phòng hoặc giảng viên..." type="text"/>
+</div>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Ngày học</th>
+<th>Môn học</th>
+<th>Phòng</th>
+<th>Giảng viên</th>
+<th>Thời gian</th>
+<th>Lớp</th>
+<th>Thao tác</th>
+</tr>
+</thead>
+<tbody id="schedule-list"></tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Đặt phòng -->
+
+<!-- Thiết bị -->
+
+<!-- Báo cáo -->
+
+<footer>
+<p>© 2026 UTC Room - Hệ thống quản lý phòng học</p>
+</footer>
+</main>
+</div>
+<!-- Hộp thông báo -->
+<div class="toast" id="toast"></div>
+<div class="login-overlay" hidden="" id="login-modal">
+<form class="login-box" id="login-form">
+<h2>Đăng nhập quản trị</h2><p>UTC Room — tài khoản demo</p>
+<label>Tài khoản<input autocomplete="username" id="login-user" placeholder="Tên đăng nhập" required=""/></label>
+<label>Mật khẩu<input autocomplete="current-password" id="login-pass" placeholder="Mật khẩu" required="" type="password"/></label>
+<p class="login-error" id="login-error"></p>
+<div class="login-buttons"><button class="btn btn-secondary" id="login-close" type="button">Hủy</button><button class="btn btn-primary" type="submit">Đăng nhập</button></div>
+</form>
+</div>
+<script src="dungchung.js"></script>
+<script src="lichhoc.js"></script>
+</body>
+</html>

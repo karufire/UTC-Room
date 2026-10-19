@@ -1,0 +1,18 @@
+UTC ROOM - HTML VÀ JAVASCRIPT TÁCH RIÊNG
+
+Mở index.html bằng Live Server trong VS Code.
+
+HTML             JAVASCRIPT
+index.html       tongquan.js
+tongquan.html    tongquan.js
+quanlyphong.html quanlyphong.js
+lichhoc.html     lichhoc.js
+thietbi.html     thietbi.js
+baocao.html      baocao.js
+
+dungchung.js: dữ liệu localStorage, đăng nhập Admin demo, xử lý thêm/sửa/xóa, hàm dùng chung.
+UTC-room.css: giao diện dùng chung.
+
+Đã bỏ chức năng đặt phòng.
+Tài khoản Admin demo: admin / Admin@123.
+Lưu ý: Đây là demo chạy trên trình duyệt, không phải hệ thống đăng nhập an toàn.
